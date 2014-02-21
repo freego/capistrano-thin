@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["a.lepore@freegoweb.it"]
   spec.summary       = %q{Thin support for Capistrano 3.x}
   spec.description   = %q{Thin support for Capistrano 3.x}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/freego/capistrano-thin"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
