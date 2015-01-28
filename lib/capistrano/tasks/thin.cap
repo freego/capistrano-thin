@@ -1,7 +1,7 @@
 namespace :deploy do
-  COMMANDS = %w(start stop restart)
+  commands = %w(start stop restart)
 
-  COMMANDS.each do |command|
+  commands.each do |command|
     task command do
       on roles(:app), in: :sequence, wait: 5 do
         within current_path do
@@ -13,6 +13,6 @@ namespace :deploy do
 
   # RVM integration
   if Gem::Specification::find_all_by_name('capistrano-rvm').any?
-    COMMANDS.each { |c| before c, 'rvm:hook' }
+    commands.each { |c| before c, 'rvm:hook' }
   end
 end
