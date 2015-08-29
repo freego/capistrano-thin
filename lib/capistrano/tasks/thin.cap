@@ -10,9 +10,4 @@ namespace :deploy do
       end
     end
   end
-
-  # RVM integration
-  if Gem::Specification::find_all_by_name('capistrano-rvm').any?
-    commands.each { |c| before c, 'rvm:hook' }
-  end
 end
