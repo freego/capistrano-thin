@@ -15,12 +15,15 @@ Note: A valid Thin config file is expected under
 
 Add this line to your application's Gemfile:
 
-    gem 'capistrano', '~> 3.0'
-    gem 'capistrano-thin'
+```ruby
+gem 'capistrano-thin', '~> 1.1.0'
+```
 
-If you use RVM on the server also add:
+If you use RVM on the server you should also add:
 
-    gem 'capistrano-rvm'
+```ruby
+gem 'capistrano-rvm'
+```
 
 And then execute:
 
@@ -28,9 +31,11 @@ And then execute:
 
 ## Usage
 
-Require in `Capfile` to use the default task:
+Require in `Capfile` to load tasks:
 
-    require 'capistrano/thin'
+```ruby
+require 'capistrano/thin'
+```
 
 ## Contributing
 
