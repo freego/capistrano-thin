@@ -7,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.version       = "1.2.0"
   spec.authors       = ["Alessandro Lepore"]
   spec.email         = ["a.lepore@freegoweb.it"]
-  spec.summary       = %q{Thin support for Capistrano 3.x}
-  spec.description   = %q{Thin support for Capistrano 3.x}
+  spec.summary       = %q{Thin tasks for Capistrano 3.x}
+  spec.description   = %q{Thin tasks for Capistrano 3.x}
   spec.homepage      = "https://github.com/freego/capistrano-thin"
   spec.license       = "MIT"
 

@@ -31,11 +31,7 @@ Add this line to your application's Gemfile:
 gem 'capistrano-thin', '~> 1.2.0'
 ```
 
-If you use RVM on the server you should also add:
-
-```ruby
-gem 'capistrano-rvm'
-```
+If you use RVM on the server also add the `capistrano-rvm` gem.
 
 And then execute:
 
@@ -47,6 +43,12 @@ Require in `Capfile` to load tasks:
 
 ```ruby
 require 'capistrano/thin'
+```
+
+And use tasks on `deploy.rb`, e.g.
+
+```ruby
+after 'deploy:publishing', 'thin:restart'
 ```
 
 ## Contributing
