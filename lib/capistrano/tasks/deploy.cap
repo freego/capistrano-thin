@@ -3,8 +3,8 @@ namespace :deploy do
 
   commands.each do |command|
     task command do
-      puts 'DEPRECATED - Please use thin:' + command.to_s
-      invoke 'thin:' + command.to_s
+      puts "DEPRECATED - Please use thin:#{command}"
+      invoke "thin:#{command}"
     end
   end
 end
