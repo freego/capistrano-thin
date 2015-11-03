@@ -1,0 +1,10 @@
+namespace :deploy do
+  commands = %w(start stop restart)
+
+  commands.each do |command|
+    task command do
+      puts 'DEPRECATED - Please use thin:' + command.to_s
+      invoke 'thin:' + command.to_s
+    end
+  end
+end

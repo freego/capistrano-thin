@@ -1,4 +1,4 @@
-namespace :deploy do
+namespace :thin do
   commands = %w(start stop restart)
 
   commands.each do |command|
