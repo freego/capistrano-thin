@@ -1,8 +1,9 @@
 namespace :thin do
-  commands = %w(start stop restart)
+  commands = [:start, :stop, :restart]
   config_file = fetch(:thin_config_path, "config/thin/#{fetch(:stage)}.yml")
 
   commands.each do |command|
+    desc "thin #{command}"
     task command do
       on roles(:app), in: :sequence, wait: 5 do
         within current_path do
