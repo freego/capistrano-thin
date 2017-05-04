@@ -6,11 +6,6 @@ Simple Thin specific tasks for Capistrano 3.x, implements the following tasks:
 thin:restart
 thin:start
 thin:stop
-
-# DEPRECATED - will be removed later
-deploy:restart
-deploy:start
-deploy:stop
 ```
 
 ## Configuration
@@ -28,7 +23,7 @@ set :thin_config_path, -> { "#{shared_path}/config/thin.yml" }
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'capistrano-thin', '~> 1.2.0'
+gem 'capistrano-thin', '~> 2.0.0'
 ```
 
 If you use RVM on the server also add the `capistrano-rvm` gem.

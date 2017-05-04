@@ -1,3 +1,6 @@
+# 2.0.0
+* Remove deprecated `deploy:` tasks.
+
 # 1.2.0
 * Namespace change: deprecate `deploy:` in favour of `thin:`.
 * Add `thin_config_path` setting.
