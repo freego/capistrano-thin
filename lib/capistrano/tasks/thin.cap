@@ -4,7 +4,7 @@ namespace :thin do
   commands.each do |command|
     desc "thin #{command}"
     task command do
-      on roles(:app), in: :sequence, wait: 5 do
+      on roles(fetch(:thin_roles, :app), in: :sequence, wait: 5 do
         within current_path do
           config_file = fetch(:thin_config_path, "config/thin/#{fetch(:stage)}.yml")
           execute :bundle, "exec thin #{command} -C #{config_file}"

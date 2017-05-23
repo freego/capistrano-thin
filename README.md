@@ -18,6 +18,12 @@ but you can also specify custom config file using `set` e.g.
 set :thin_config_path, -> { "#{shared_path}/config/thin.yml" }
 ```
 
+By default, thin will be executed with :app role. But you can assign it to a different role:
+
+```ruby
+set :thin_roles, [:my_role]
+```
+
 ## Installation
 
 Add this line to your application's Gemfile:
