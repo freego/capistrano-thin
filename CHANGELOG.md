@@ -1,3 +1,6 @@
+# 2.0.1
+* Configurable roles.
+
 # 2.0.0
 * Remove deprecated `deploy:` tasks.
 

@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "capistrano-thin"
-  spec.version       = "2.0.0"
+  spec.version       = "2.0.1"
   spec.authors       = ["Alessandro Lepore"]
   spec.email         = ["a.lepore@freegoweb.it"]
   spec.summary       = %q{Thin tasks for Capistrano 3.x}
